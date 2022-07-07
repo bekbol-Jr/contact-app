@@ -95,13 +95,13 @@ function App() {
                   <h1 className="text-3xl mb-4">New contact</h1>
 
                   <div className="my-2">
-                      <p className="title-input" >Name</p>
+                      <p className="title-input " >Name</p>
                       <input
                           onChange={handleChange}
                           name="name"
                           value={user.name}
                           type="text" id="default-input"
-                             className={` text-lg w-full bg-gray-400 border ${nameError} text-black rounded-lg focus:ring-blue-500 focus:border-blue-500
+                             className={` text-lg w-full bg-gray-400 border-2 ${nameError} text-black rounded-lg focus:ring-blue-500 focus:border-blue-500
                               p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-100 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500`}
                           placeholder="Имя" required/>
                   </div>
@@ -112,7 +112,7 @@ function App() {
                           name="surName"
                           value={user.surName}
                           type="text" id="default-input"
-                             className={` w-full bg-gray-400 text-lg border ${surNameError}  text-black rounded-lg focus:ring-blue-500 focus:border-blue-500
+                             className={` w-full bg-gray-400 text-lg border-2 ${surNameError}  text-black rounded-lg focus:ring-blue-500 focus:border-blue-500
                                  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-100 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500`}
                           placeholder="Фамилия" required/>
                   </div>
@@ -123,7 +123,7 @@ function App() {
                           name="phone"
                           value={user.phone}
                           type="number" id="default-input"
-                             className={` w-full bg-gray-400 text-lg border ${phoneError} text-black rounded-lg focus:ring-blue-500 focus:border-blue-500
+                             className={` w-full bg-gray-400 text-lg border-2 ${phoneError} text-black rounded-lg focus:ring-blue-500 focus:border-blue-500
                                  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-100 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500`}
                           placeholder="номер телефона" required/>
 
