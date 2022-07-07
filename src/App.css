@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.registration-box{
+    margin: 40px;
+    background: rgba(0, 0, 0, 0.55);
+    width: 50%;
+    border-radius: 10px;
+    padding: 30px 50px 20px 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contacts-box{
+    height: 450px;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.55);
+    margin: 40px 20px;
+    padding: 30px 50px 20px 50px;
+    border-radius: 10px;
+    overflow: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title-input{
+    padding: 0 0 5px 7px;
+    font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+body{
+    background: #91c970;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.save-btn{
+    margin-left: 80%;
+}
+.contact-list{
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.profile-box{
+    color: white;
+    background: red;
+    /*padding: 5px 6px;*/
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.phoneInput{
+    padding: 10px 20px;
+    background: #000;
+}
+
+.modal-window{
+    margin-right: -50%;
+}
+
+.icon{
+    color: #dddde5;
+    font-size: 14px;
+}
+
+@media (max-width: 1050px) {
+    .big-box{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
 }
