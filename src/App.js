@@ -83,7 +83,8 @@ function App() {
     //         return;
     //     }
     // }
-
+    console.log(Math.sqrt(64))
+    console.log(Math.sqrt(9))
 
   return (
     <div className="App">

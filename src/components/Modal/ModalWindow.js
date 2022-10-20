@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faPencilRuler} from "@fortawesome/free-solid-svg-icons";
 
 
-const ModalWindow = ({show, setShow, contact, updateContact}) => {
+const ModalWindow = ({show, setShow, contact, updateContact, faPencil}) => {
 
     const handleClick = () => {
         setShow(!show)
@@ -29,7 +31,7 @@ const ModalWindow = ({show, setShow, contact, updateContact}) => {
                     handleClick()
                 }}
                 className="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-3 py-1.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
-            > <i className="icon fa-solid fa-pen-clip"></i>
+            > <FontAwesomeIcon icon={faPencilRuler} />
             </button>
                 <div
                     style={{

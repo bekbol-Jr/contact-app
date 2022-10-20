@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import ModalWindow from "./Modal/ModalWindow";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
+import { faPencil } from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -181,11 +183,11 @@ const NewContacts = ({el, deleteContact, updateContact}) => {
                                       </span>
 
             <div className="pl-30">
-                <ModalWindow updateContact={updateContact} contact={el} show={show} setShow={setShow} />
+                <ModalWindow faPencil={faPencil} updateContact={updateContact} contact={el} show={show} setShow={setShow} />
                 <button
                     onClick={() => deleteContact(el.id)}
                     className="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-1.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
-                ><i className="icon fa-solid fa-trash-can"></i>
+                ><FontAwesomeIcon icon={faTrashCan}/>
                 </button>
 
             </div>
